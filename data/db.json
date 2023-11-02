@@ -1,0 +1,366 @@
+{
+  "products": [
+    {
+      "id": 6,
+      "name": "Product 1",
+      "image": "/img/product.jpeg",
+      "category": "vegetables",
+      "price": 100,
+      "rating": 3,
+      "description": "This is product 1"
+    },
+    {
+      "id": 7,
+      "name": "Product 2",
+      "image": "/img/products/mango.jpg",
+      "category": "fruits",
+      "price": 200,
+      "rating": 5,
+      "description": "This is product 2"
+    },
+    {
+      "id": 8,
+      "name": "Product 3",
+      "image": "/img/products/papaya.jpg",
+      "category": "dairy",
+      "price": 300,
+      "rating": 4,
+      "description": "This is product 3"
+    },
+    {
+      "id": 9,
+      "name": "Product 4",
+      "image": "/img/products/orange.jpg",
+      "category": "salads",
+      "price": 400,
+      "rating": 3,
+      "description": "This is product 4"
+    },
+    {
+      "id": 10,
+      "name": "Product 5",
+      "image": "/img/products/strawberry.jpg",
+      "category": "momskitchen",
+      "price": 500,
+      "rating": 5,
+      "description": "This is product 5"
+    },
+    {
+      "id": 11,
+      "name": "Product 1",
+      "image": "/img/product.jpeg",
+      "category": "vegetables",
+      "price": 100,
+      "rating": 3,
+      "description": "This is product 1"
+    },
+    {
+      "id": 12,
+      "name": "Product 2",
+      "image": "/img/products/mango.jpg",
+      "category": "fruits",
+      "price": 200,
+      "rating": 5,
+      "description": "This is product 2"
+    },
+    {
+      "id": 13,
+      "name": "Product 3",
+      "image": "/img/products/papaya.jpg",
+      "category": "dairy",
+      "price": 300,
+      "rating": 4,
+      "description": "This is product 3"
+    },
+    {
+      "id": 14,
+      "name": "Product 4",
+      "image": "/img/products/orange.jpg",
+      "category": "salads",
+      "price": 400,
+      "rating": 3,
+      "description": "This is product 4"
+    },
+    {
+      "id": 15,
+      "name": "Product 5",
+      "image": "/img/products/strawberry.jpg",
+      "category": "momskitchen",
+      "price": 500,
+      "rating": 5,
+      "description": "This is product 5"
+    },
+    {
+      "id": 16,
+      "name": "Product 1",
+      "image": "/img/product.jpeg",
+      "category": "vegetables",
+      "price": 100,
+      "rating": 3,
+      "description": "This is product 1"
+    },
+    {
+      "id": 17,
+      "name": "Product 2",
+      "image": "/img/products/mango.jpg",
+      "category": "fruits",
+      "price": 200,
+      "rating": 5,
+      "description": "This is product 2"
+    },
+    {
+      "id": 18,
+      "name": "Product 3",
+      "image": "/img/products/papaya.jpg",
+      "category": "dairy",
+      "price": 300,
+      "rating": 4,
+      "description": "This is product 3"
+    },
+    {
+      "id": 19,
+      "name": "Product 4",
+      "image": "/img/products/orange.jpg",
+      "category": "salads",
+      "price": 400,
+      "rating": 3,
+      "description": "This is product 4"
+    },
+    {
+      "id": 20,
+      "name": "Product 5",
+      "image": "/img/products/strawberry.jpg",
+      "category": "momskitchen",
+      "price": 500,
+      "rating": 5,
+      "description": "This is product 5"
+    },
+    {
+      "id": 21,
+      "name": "Product 1",
+      "image": "/img/product.jpeg",
+      "category": "vegetables",
+      "price": 100,
+      "rating": 3,
+      "description": "This is product 1"
+    },
+    {
+      "id": 22,
+      "name": "Product 2",
+      "image": "/img/products/mango.jpg",
+      "category": "fruits",
+      "price": 200,
+      "rating": 5,
+      "description": "This is product 2"
+    },
+    {
+      "id": 23,
+      "name": "Product 3",
+      "image": "/img/products/papaya.jpg",
+      "category": "dairy",
+      "price": 300,
+      "rating": 4,
+      "description": "This is product 3"
+    },
+    {
+      "id": 24,
+      "name": "Product 4",
+      "image": "/img/products/orange.jpg",
+      "category": "salads",
+      "price": 400,
+      "rating": 3,
+      "description": "This is product 4"
+    },
+    {
+      "id": 25,
+      "name": "Product 5",
+      "image": "/img/products/strawberry.jpg",
+      "category": "momskitchen",
+      "price": 500,
+      "rating": 5,
+      "description": "This is product 5"
+    },
+    {
+      "id": 26,
+      "name": "Product 1",
+      "image": "/img/product.jpeg",
+      "category": "vegetables",
+      "price": 100,
+      "rating": 3,
+      "description": "This is product 1"
+    },
+    {
+      "id": 27,
+      "name": "Product 2",
+      "image": "/img/products/mango.jpg",
+      "category": "fruits",
+      "price": 200,
+      "rating": 5,
+      "description": "This is product 2"
+    },
+    {
+      "id": 28,
+      "name": "Product 3",
+      "image": "/img/products/papaya.jpg",
+      "category": "dairy",
+      "price": 300,
+      "rating": 4,
+      "description": "This is product 3"
+    },
+    {
+      "id": 29,
+      "name": "Product 4",
+      "image": "/img/products/orange.jpg",
+      "category": "salads",
+      "price": 400,
+      "rating": 3,
+      "description": "This is product 4"
+    },
+    {
+      "id": 30,
+      "name": "Product 5",
+      "image": "/img/products/strawberry.jpg",
+      "category": "momskitchen",
+      "price": 500,
+      "rating": 5,
+      "description": "This is product 5"
+    },
+    {
+      "id": 31,
+      "name": "Product 1",
+      "image": "/img/product.jpeg",
+      "category": "vegetables",
+      "price": 100,
+      "rating": 3,
+      "description": "This is product 1"
+    },
+    {
+      "id": 32,
+      "name": "Product 2",
+      "image": "/img/products/mango.jpg",
+      "category": "fruits",
+      "price": 200,
+      "rating": 5,
+      "description": "This is product 2"
+    },
+    {
+      "id": 33,
+      "name": "Product 3",
+      "image": "/img/products/papaya.jpg",
+      "category": "dairy",
+      "price": 300,
+      "rating": 4,
+      "description": "This is product 3"
+    },
+    {
+      "id": 34,
+      "name": "Product 4",
+      "image": "/img/products/orange.jpg",
+      "category": "salads",
+      "price": 400,
+      "rating": 3,
+      "description": "This is product 4"
+    },
+    {
+      "id": 35,
+      "name": "Product 5",
+      "image": "/img/products/strawberry.jpg",
+      "category": "momskitchen",
+      "price": 500,
+      "rating": 5,
+      "description": "This is product 5"
+    },
+    {
+      "id": 36,
+      "name": "Product 1",
+      "image": "/img/product.jpeg",
+      "category": "vegetables",
+      "price": 100,
+      "rating": 3,
+      "description": "This is product 1"
+    },
+    {
+      "id": 37,
+      "name": "Product 2",
+      "image": "/img/products/mango.jpg",
+      "category": "fruits",
+      "price": 200,
+      "rating": 5,
+      "description": "This is product 2"
+    },
+    {
+      "id": 38,
+      "name": "Product 3",
+      "image": "/img/products/papaya.jpg",
+      "category": "dairy",
+      "price": 300,
+      "rating": 4,
+      "description": "This is product 3"
+    },
+    {
+      "id": 39,
+      "name": "Product 4",
+      "image": "/img/products/orange.jpg",
+      "category": "salads",
+      "price": 400,
+      "rating": 3,
+      "description": "This is product 4"
+    },
+    {
+      "id": 40,
+      "name": "Product 5",
+      "image": "/img/products/strawberry.jpg",
+      "category": "momskitchen",
+      "price": 500,
+      "rating": 5,
+      "description": "This is product 5"
+    }
+  ],
+  "categories": [
+    {
+      "id": "c1",
+      "name": "vegetables"
+    },
+    {
+      "id": "c2",
+      "name": "fruits"
+    },
+    {
+      "id": "c3",
+      "name": "grains"
+    },
+    {
+      "id": "c4",
+      "name": "dairy"
+    },
+    {
+      "id": "c5",
+      "name": "staples"
+    },
+    {
+      "id": "c6",
+      "name": "exoticvegetables"
+    },
+    {
+      "id": "c7",
+      "name": "salads"
+    },
+    {
+      "id": "c8",
+      "name": "momskitchen"
+    },
+    {
+      "id": "c9",
+      "name": "dryfruits"
+    },
+    {
+      "id": "c10",
+      "name": "freshbakery"
+    },
+    {
+      "id": "c11",
+      "name": "premiumfruits"
+    }
+  ],
+  "cart": []
+}

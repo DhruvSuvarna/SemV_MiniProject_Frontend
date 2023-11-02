@@ -1,0 +1,75 @@
+const mongoose = require('mongoose');
+//User Schemas
+const farmerSchema = new mongoose.Schema({
+    username: { type: String, unique: true, required: true },
+    firstname: { type: String, required: true },
+    lastname: { type: String, required: true },
+    email: { type: String, required: true },
+    password: { type: String, required: true },
+    phone: { type: String, unique: true, required: true },
+    state: { type: String, required: true },
+    city: { type: String, required: true }
+});
+
+const consumerSchema = new mongoose.Schema({
+  username: { type: String, unique: true, required: true },
+  firstname:String,
+  lastname:String,
+  email: { type: String, required: true },
+  password: { type: String, required: true },
+  phone: { type: String, unique: true, required: true },
+  city:String,
+  state:String,
+})
+
+//cart
+    {
+      "id": 1,
+      "name": "Product 1",
+      "image": "/img/product.jpeg",
+      "category": "vegetables",
+      "price": 100,
+      "totalprice": 100,
+      "rating": 3,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "image": "/img/products/mango.jpg",
+      "category": "fruits",
+      "price": 200,
+      "totalprice":200,
+      "rating": 5,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "image": "/img/products/papaya.jpg",
+      "category": "dairy",
+      "price": 300,
+      "totalprice": 300,
+      "rating": 4,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "image": "/img/products/orange.jpg",
+      "category": "salads",
+      "price": 400,
+      "totalprice": 400,
+      "rating": 3,
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "image": "/img/products/strawberry.jpg",
+      "category": "momskitchen",
+      "price": 500,
+      "totalprice": 500,
+      "rating": 5,
+      "quantity": 1
+    }
