@@ -1,5 +1,8 @@
-### Created by Dhruv Suvarna
-Agriculture focused ecommerce website built using **NodeJS** for the backend, **React** for the frontend, and **MongoDB** for the database. The website facilitates communication between farmers and consumers and showcases the latest agricultural technology and equipment.
+# AgriGo
+An Agriculture focused ecommerce website built using **NodeJS** for the backend, **React** for the frontend, and **MongoDB** for the database. The website facilitates communication between farmers and consumers and showcases the latest agricultural technology and equipment.
+
+##
+
 To run this project:
 ```
 npm install
