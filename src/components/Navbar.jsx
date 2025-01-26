@@ -7,6 +7,7 @@ import { styled } from '@mui/material/styles';
 import SearchBar from './SearchBar';
 import Cart from './Cart';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
+import { useSelector } from 'react-redux';
 
 const defaultTheme = createTheme({
     palette: {
@@ -32,6 +33,12 @@ const defaultTheme = createTheme({
         }
     }
   });
+
+  const CustomBadge = styled(Badge)(({ theme }) => ({
+    '& .MuiBadge-badge': {
+      backgroundColor: theme.palette.pentenary.main,
+    },
+  }));  
 
   const LogoutMenuItem = styled(MenuItem)(({ theme })=>({
     color: theme.palette.quaternary.main
@@ -72,7 +79,7 @@ export default function Navbar() {
   const [cityList, setCities] = useState([]);
   const [city, setCity] = useState('Location');
   const [loggedIn, setLoggedIn] = useState(false);
-  const [cartLength, setCartLength] = useState(0);
+  const cartLength = useSelector(state=>state.cart.length);
 
   useEffect(()=>{
     var headers = new Headers();
@@ -90,9 +97,6 @@ export default function Navbar() {
     })
     .catch(error => console.log('error', error));
 
-    axios.get('http://localhost:8000/cart')
-    .then(response=>setCartLength(response.data.length))
-    .catch(err=>console.log(err));
   }, [])
 
   const anchor = 'right';
@@ -157,7 +161,7 @@ export default function Navbar() {
                         })}
                     </Select>
                 </FormControl>
-                <Badge badgeContent={cartLength} color="pentenary"
+                <CustomBadge badgeContent={cartLength}
                   sx={{overflow: 'visible', color: '#fff'}}>
                   <Button 
                       onClick={()=>toggleDrawer(true)} 
@@ -168,7 +172,7 @@ export default function Navbar() {
                   >
                       My Cart
                   </Button>
-                </Badge>
+                </CustomBadge>
                 <Cart anchor={anchor} cartState={cartState} toggleDrawer={toggleDrawer}/>
                 {
                 !loggedIn && 
@@ -187,7 +191,7 @@ export default function Navbar() {
                         style={{width:'fit-content', fontSize: '1rem'}}
                     >
                         <MenuItem value='My Orders'>My Orders</MenuItem>
-                        <MenuItem value='My Account'>My Account</MenuItem>
+                        <MenuItem value='My Account'>My Profile</MenuItem>
                         <MenuItem value='Manage Addresses'>My Address</MenuItem>
                         <LogoutMenuItem value='Logout'>Logout</LogoutMenuItem>
                     </Select>

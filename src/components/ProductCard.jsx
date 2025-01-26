@@ -7,6 +7,9 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import {createTheme, ThemeProvider} from '@mui/material';
 import { FlashOnRounded } from '@mui/icons-material';
+import { useSelector, useDispatch } from 'react-redux';
+import { pushItem, addItem, subtractItem } from '../redux/reducers/cart/cartSlice';
+import { use } from 'react';
 
 const defaultTheme = createTheme({
   palette: {
@@ -29,92 +32,40 @@ const defaultTheme = createTheme({
 });
 
 export default function ProductCard(props) {
-
+  const cartItems = useSelector(state=>state.cart);
+  const dispatch = useDispatch();
   const [isAdded, setIsAdded] = useState(false);
   const [quantity, setQuantity] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(()=>{
-    axios.get('http://localhost:8000/cart')
-    .then(response=>{
-      response.data.map(item=>{
-        if (item.id === props.product.id){
-          setIsAdded(true);
-          setQuantity(item.quantity);
-        }
-      })
-     })
-    .catch(err=>console.log(err))
-  }, [])
+    setIsAdded(() => {
+      return cartItems.some(item => item.id === props.product.id);
+    })
+    setQuantity(() => {
+      return cartItems.filter(item => item.id === props.product.id).map(item => item.quantity)[0]
+    })
+  }, [cartItems])
 
-  function AddToCart(product) {
-    let cart = []
-    fetch('http://localhost:8000/cart', {
-        method: 'POST',
-        headers: {"Content-type": "application/json"},
-        body: JSON.stringify({
-          id: product.id,
-          name: product.name,
-          image: product.image,
-          category: product.category,
-          price: product.price,
-          totalprice: product.price,
-          rating: product.rating,
-          quantity: 1})
-      })
-    .then((response)=>console.log(response))
-    .catch(err=>console.log(err));
-    setQuantity(quantity+1);
+  const AddToCart = (product) => {
+    product = {...product, quantity: 1, totalprice: product.price};
+    console.log(product);
+    dispatch(pushItem(product));
     setIsAdded(true);
-    window.location.reload();
   }
 
-  function handleRemove(id) {
-    axios.delete(`http://localhost:8000/cart/${id}`)
-    .then(response => {
-      console.log(response.data);
-      setIsAdded(false);
-      window.location.reload();
-    })
-    .catch(err=>console.log(err));
+  const handleAdd = (id) => {
+    dispatch(addItem(id));
   }
 
-  function handleSubtract(id){
-    let q = quantity, p=props.product.price;
-    axios.patch(`http://localhost:8000/cart/${id}`, {
-      quantity: q-1,
-      totalprice: p*(q-1)
-    })
-    .then((response) => {
-      console.log(response.data);
-      if(response.data.quantity === 0){
-        handleRemove(id);
-        window.location.reload();
-      } else {
-        setQuantity(response.data.quantity);
-        window.location.reload();
-      }
-    })
-    .catch(err=>console.log(err));
+  const handleSubtract = (id) => {
+    dispatch(subtractItem(id));
   }
-  function handleAdd(id){
-    let q = quantity, p=props.product.price;
-    axios.patch(`http://localhost:8000/cart/${id}`, {
-      quantity: q+1,
-      totalprice: p*(q+1)
-    })
-    .then(response => {
-      console.log(response.data);
-      setQuantity(response.data.quantity);
-    })
-    .catch(err=>console.log(err));
-  }
-
-  const navigate = useNavigate();
 
   return (
     <ThemeProvider theme={defaultTheme}>
       <Card
-        sx={{maxWidth: '300px', 
+        sx={{maxWidth: '300px', minWidth: '285px',
           '&:hover': {boxShadow: '0px 1px 5px rgba(0, 0, 0, 0.425)'},
           padding: '2vh', borderRadius: '2vh'
         }}

@@ -1,17 +1,17 @@
 {
   "products": [
     {
-      "id": 6,
-      "name": "Product 1",
-      "image": "/img/product.jpeg",
+      "id": "6",
+      "name": "Beans",
+      "image": "/img/products/products/vegetables/beans.jpeg",
       "category": "vegetables",
       "price": 100,
       "rating": 3,
       "description": "This is product 1"
     },
     {
-      "id": 7,
-      "name": "Product 2",
+      "id": "7",
+      "name": "Mango",
       "image": "/img/products/mango.jpg",
       "category": "fruits",
       "price": 200,
@@ -19,224 +19,224 @@
       "description": "This is product 2"
     },
     {
-      "id": 8,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
+      "id": "8",
+      "name": "Butter",
+      "image": "/img/products/products/Dairy/butter.jpg",
       "category": "dairy",
       "price": 300,
       "rating": 4,
       "description": "This is product 3"
     },
     {
-      "id": 9,
-      "name": "Product 4",
+      "id": "9",
+      "name": "Orange",
       "image": "/img/products/orange.jpg",
-      "category": "salads",
+      "category": "fruits",
       "price": 400,
       "rating": 3,
       "description": "This is product 4"
     },
     {
-      "id": 10,
-      "name": "Product 5",
+      "id": "10",
+      "name": "Strawberry",
       "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
+      "category": "fruits",
       "price": 500,
       "rating": 5,
       "description": "This is product 5"
     },
     {
-      "id": 11,
-      "name": "Product 1",
-      "image": "/img/product.jpeg",
+      "id": "11",
+      "name": "Beetroot",
+      "image": "/img/products/products/vegetables/beetroot.jpg",
       "category": "vegetables",
       "price": 100,
       "rating": 3,
       "description": "This is product 1"
     },
     {
-      "id": 12,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
+      "id": "12",
+      "name": "Banana",
+      "image": "/img/products/products/fruits/banana.jpg",
       "category": "fruits",
       "price": 200,
       "rating": 5,
       "description": "This is product 2"
     },
     {
-      "id": 13,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
+      "id": "13",
+      "name": "Yoghurt",
+      "image": "/img/products/products/Dairy/yoghurt.jpg",
       "category": "dairy",
       "price": 300,
       "rating": 4,
       "description": "This is product 3"
     },
     {
-      "id": 14,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
+      "id": "14",
+      "name": "Barley",
+      "image": "/img/products/products/grain/barley rains.jpg",
+      "category": "grains",
       "price": 400,
       "rating": 3,
       "description": "This is product 4"
     },
     {
-      "id": 15,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
+      "id": "15",
+      "name": "Almonds",
+      "image": "/img/products/products/dryfruits/almonds.jpeg",
+      "category": "dryfruits",
       "price": 500,
       "rating": 5,
       "description": "This is product 5"
     },
     {
-      "id": 16,
-      "name": "Product 1",
-      "image": "/img/product.jpeg",
+      "id": "16",
+      "name": "Brinjal",
+      "image": "/img/products/products/vegetables/bringal.jpg",
       "category": "vegetables",
       "price": 100,
       "rating": 3,
       "description": "This is product 1"
     },
     {
-      "id": 17,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
+      "id": "17",
+      "name": "Pineapple",
+      "image": "/img/products/products/fruits/pineapple.jpg",
       "category": "fruits",
       "price": 200,
       "rating": 5,
       "description": "This is product 2"
     },
     {
-      "id": 18,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
+      "id": "18",
+      "name": "Yoghurt",
+      "image": "/img/products/products/Dairy/yoghurt.jpg",
       "category": "dairy",
       "price": 300,
       "rating": 4,
       "description": "This is product 3"
     },
     {
-      "id": 19,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
+      "id": "19",
+      "name": "Basmati rice",
+      "image": "/img/products/products/grain/basmati rice.jpeg",
+      "category": "grains",
       "price": 400,
       "rating": 3,
       "description": "This is product 4"
     },
     {
-      "id": 20,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
+      "id": "20",
+      "name": "Cashews",
+      "image": "/img/products/products/dryfruits/cashew.jpeg",
+      "category": "dryfruits",
       "price": 500,
       "rating": 5,
       "description": "This is product 5"
     },
     {
-      "id": 21,
-      "name": "Product 1",
-      "image": "/img/product.jpeg",
+      "id": "21",
+      "name": "Cabbage",
+      "image": "/img/products/products/vegetables/cabbage.jpg",
       "category": "vegetables",
       "price": 100,
       "rating": 3,
       "description": "This is product 1"
     },
     {
-      "id": 22,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
+      "id": "22",
+      "name": "Plum",
+      "image": "/img/products/products/fruits/plum.jpg",
       "category": "fruits",
       "price": 200,
       "rating": 5,
       "description": "This is product 2"
     },
     {
-      "id": 23,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
+      "id": "23",
+      "name": "Butter",
+      "image": "/img/products/products/Dairy/butter.jpg",
       "category": "dairy",
       "price": 300,
       "rating": 4,
       "description": "This is product 3"
     },
     {
-      "id": 24,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
+      "id": "24",
+      "name": "Brown rice",
+      "image": "/img/products/products/grain/brown rice.jpg",
+      "category": "grains",
       "price": 400,
       "rating": 3,
       "description": "This is product 4"
     },
     {
-      "id": 25,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
+      "id": "25",
+      "name": "Walnut",
+      "image": "/img/products/products/dryfruits/Walnut.jpeg",
+      "category": "dryfruits",
       "price": 500,
       "rating": 5,
       "description": "This is product 5"
     },
     {
-      "id": 26,
-      "name": "Product 1",
-      "image": "/img/product.jpeg",
+      "id": "26",
+      "name": "Carrot",
+      "image": "/img/products/products/vegetables/carrot.jpg",
       "category": "vegetables",
       "price": 100,
       "rating": 3,
       "description": "This is product 1"
     },
     {
-      "id": 27,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
+      "id": "27",
+      "name": "Watermelon",
+      "image": "/img/products/products/fruits/watermelon.jpg",
       "category": "fruits",
       "price": 200,
       "rating": 5,
       "description": "This is product 2"
     },
     {
-      "id": 28,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
+      "id": "28",
+      "name": "Butter",
+      "image": "/img/products/products/Dairy/butter.jpg",
       "category": "dairy",
       "price": 300,
       "rating": 4,
       "description": "This is product 3"
     },
     {
-      "id": 29,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
+      "id": "29",
+      "name": "Millet Mix",
+      "image": "/img/products/products/grain/millet mix.jpg",
+      "category": "grains",
       "price": 400,
       "rating": 3,
       "description": "This is product 4"
     },
     {
-      "id": 30,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
+      "id": "30",
+      "name": "Dried Apricots",
+      "image": "/img/products/products/dryfruits/Dried Apricots.jpeg",
+      "category": "dryfruits",
       "price": 500,
       "rating": 5,
       "description": "This is product 5"
     },
     {
-      "id": 31,
-      "name": "Product 1",
-      "image": "/img/product.jpeg",
+      "id": "31",
+      "name": "Corn",
+      "image": "/img/products/products/vegetables/corn.jpg",
       "category": "vegetables",
       "price": 100,
       "rating": 3,
       "description": "This is product 1"
     },
     {
-      "id": 32,
-      "name": "Product 2",
+      "id": "32",
+      "name": "Mango",
       "image": "/img/products/mango.jpg",
       "category": "fruits",
       "price": 200,
@@ -244,73 +244,73 @@
       "description": "This is product 2"
     },
     {
-      "id": 33,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
+      "id": "33",
+      "name": "Yoghurt",
+      "image": "/img/products/products/Dairy/yoghurt.jpg",
       "category": "dairy",
       "price": 300,
       "rating": 4,
       "description": "This is product 3"
     },
     {
-      "id": 34,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
+      "id": "34",
+      "name": "Oats",
+      "image": "/img/products/products/grain/oats.jpeg",
+      "category": "grains",
       "price": 400,
       "rating": 3,
       "description": "This is product 4"
     },
     {
-      "id": 35,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
+      "id": "35",
+      "name": "Golden Raisins",
+      "image": "/img/products/products/dryfruits/Golden Raisins.jpg",
+      "category": "dryfruits",
       "price": 500,
       "rating": 5,
       "description": "This is product 5"
     },
     {
-      "id": 36,
-      "name": "Product 1",
-      "image": "/img/product.jpeg",
+      "id": "36",
+      "name": "Cucumber",
+      "image": "/img/products/products/vegetables/cucumber.jpeg",
       "category": "vegetables",
       "price": 100,
       "rating": 3,
       "description": "This is product 1"
     },
     {
-      "id": 37,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
+      "id": "37",
+      "name": "Strawberry",
+      "image": "/img/products/strawberry.jpg",
       "category": "fruits",
       "price": 200,
       "rating": 5,
       "description": "This is product 2"
     },
     {
-      "id": 38,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
+      "id": "38",
+      "name": "Yoghurt",
+      "image": "/img/products/products/Dairy/yoghurt.jpg",
       "category": "dairy",
       "price": 300,
       "rating": 4,
       "description": "This is product 3"
     },
     {
-      "id": 39,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
+      "id": "39",
+      "name": "Wheat",
+      "image": "/img/products/products/grain/wheat.jpeg",
+      "category": "grains",
       "price": 400,
       "rating": 3,
       "description": "This is product 4"
     },
     {
-      "id": 40,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
+      "id": "40",
+      "name": "Prunes and Figs",
+      "image": "/img/products/products/dryfruits/Prunes and Figs.jpeg",
+      "category": "dryfruits",
       "price": 500,
       "rating": 5,
       "description": "This is product 5"
@@ -362,5 +362,206 @@
       "name": "premiumfruits"
     }
   ],
-  "cart": []
+  "farmingArticles": [
+    {
+      "Position": "1",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/94012/vst-tractors.jpg?width=250",
+      "AltText": "VST 'Series 9' Advanced Compact Range With Stellar Ergonomics To Transform Farming Practices",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/vst-series-9-advanced-compact-range-with-stellar-ergonomics-to-transform-farming-practices/",
+      "ArticleTitle": "VST 'Series 9' Advanced Compact Range With Stellar Ergonomics To Transform Farming Practices",
+      "id": "6b00"
+    },
+    {
+      "Position": "2",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93873/10_157709539720191223.jpg?width=250",
+      "AltText": "Mahindra’s Farm Equipment Sector Sales Crossed 42,000+ Units in India During September 2023",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/mahindra-s-farm-equipment-sector-sells-crossed-42-000plus-units-in-india-during-september-2023/",
+      "ArticleTitle": "Mahindra’s Farm Equipment Sector Sales Crossed 42,000+ Units in India During September 2023",
+      "id": "6c35"
+    },
+    {
+      "Position": "3",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93851/dr-k-c-ravi-and-dr-ashok-dalwai.jpg?width=250",
+      "AltText": "CropLife India 43rd AGM Discusses Farmer Centric Sustainable Tech Adoption For Better Agricultural Growth",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/croplife-india-43rd-agm-discusses-farmer-centric-sustainable-tech-adoption-for-better-agricultural-growth/",
+      "ArticleTitle": "CropLife India 43rd AGM Discusses Farmer Centric Sustainable Tech Adoption For Better Agricultural Growth",
+      "id": "727d"
+    },
+    {
+      "Position": "4",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93793/existing-tractor.jpg?width=250",
+      "AltText": "How to Find the True Value of Your Existing Tractor?",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/how-to-find-the-true-value-of-your-existing-tractor/",
+      "ArticleTitle": "How to Find the True Value of Your Existing Tractor?",
+      "id": "a180"
+    },
+    {
+      "Position": "5",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93579/winter-and-field.jpg?width=250",
+      "AltText": "Machinery Used in Agriculture During Winter Months in India",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/machinery-used-in-agriculture-during-winter-months-in-india/",
+      "ArticleTitle": "Machinery Used in Agriculture During Winter Months in India",
+      "id": "95a8"
+    },
+    {
+      "Position": "6",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93426/aesthetic-photo-collage-daily-vlog-youtube-thumbnail.png?width=250",
+      "AltText": "10 Latest Agriculture Trends In 2023",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/latest-agriculture-trends-to-meet-demand-maximize-profits/",
+      "ArticleTitle": "10 Latest Agriculture Trends In 2023",
+      "id": "f33c"
+    },
+    {
+      "Position": "7",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93288/farmer-holds-rice-hand.png?width=250",
+      "AltText": "Enhancing Smart Farming through Lipo-chitooligosaccharide (LCO) Technology: Why Technological Advancements in Fertilizer Formation is the Next Big Thing",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/enhancing-smart-farming-through-lipo-chitooligosaccharide-lco-technology-why-technological-advancements-in-fertilizer-formation-is-the-next-big-thing/",
+      "ArticleTitle": "Enhancing Smart Farming through Lipo-chitooligosaccharide (LCO) Technology: Why Technological Advancements in Fertilizer Formation is the Next Big Thing",
+      "id": "93e4"
+    },
+    {
+      "Position": "8",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93209/smart-robotic-farmer-spraying-fertilizer-vegetable-green-plants.png?width=250",
+      "AltText": "Modern Technology Is Changing The Farmer’s Life, Helps In Earning Millions Per Year By Improving Productivity",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/modern-technology-is-changing-the-farmer-s-life-helps-in-earning-millions-per-year-by-improving-productivity/",
+      "ArticleTitle": "Modern Technology Is Changing The Farmer’s Life, Helps In Earning Millions Per Year By Improving Productivity",
+      "id": "eb66"
+    },
+    {
+      "Position": "9",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93125/screenshot-2023-08-31-093533.png?width=250",
+      "AltText": "Best Tractors Under 5 Lakhs That Can Help You Earn Millions",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/top-5-reasonable-tractors-that-can-help-you-earn-millions/",
+      "ArticleTitle": "Best Tractors Under 5 Lakhs That Can Help You Earn Millions",
+      "id": "18be"
+    },
+    {
+      "Position": "10",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93043/untitled-design-2.jpg?width=250",
+      "AltText": "Special Drone-Based Spraying Service on Rental Basis Launched by Salam Kisan, Farmers’ Producer Organizations (FPOs) ",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/special-drone-based-spraying-service-on-rental-basis-launched-by-salam-kisan-farmers-producer-organizations-fpos/",
+      "ArticleTitle": "Special Drone-Based Spraying Service on Rental Basis Launched by Salam Kisan, Farmers’ Producer Organizations (FPOs) ",
+      "id": "33f1"
+    },
+    {
+      "Position": "11",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/93039/brush-cutter.jpg?width=250",
+      "AltText": "STIHL Brush Cutters Bound To Yield Maximum Efficiency",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/stihl-brush-cutters-bound-to-yield-maximum-efficiency/",
+      "ArticleTitle": "STIHL Brush Cutters Bound To Yield Maximum Efficiency",
+      "id": "3610"
+    },
+    {
+      "Position": "12",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92911/untitled-design-5.jpg?width=250",
+      "AltText": "ATMA Scheme: How to Avail Funds",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/atma-scheme-how-to-avail-funds/",
+      "ArticleTitle": "ATMA Scheme: How to Avail Funds",
+      "id": "c7b3"
+    },
+    {
+      "Position": "13",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92895/gujarat-india-image.jpg?width=250",
+      "AltText": "'Planet' Unveiling the Power of Satellite Data: Getting to Ground Truth in Asia ",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/planet-unveiling-the-power-of-satellite-data-getting-to-ground-truth-in-asia/",
+      "ArticleTitle": "'Planet' Unveiling the Power of Satellite Data: Getting to Ground Truth in Asia ",
+      "id": "ea1b"
+    },
+    {
+      "Position": "14",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92867/mahindra-cape-town-final-thar-e.jpg?width=250",
+      "AltText": "Mahindra OJA Tractors and Thar. e Unveiled at Mahindra Futurescape on India's 77th Independence Day; Exclusive Interview with Hemant Sikka",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/mahindra-oja-tractors-and-thare-unveiled-at-mahindra-futurescape-on-indias-77th-independence-day-exclusive-interview-with-hemant-sikka/",
+      "ArticleTitle": "Mahindra OJA Tractors and Thar. e Unveiled at Mahindra Futurescape on India's 77th Independence Day; Exclusive Interview with Hemant Sikka",
+      "id": "4408"
+    },
+    {
+      "Position": "15",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92820/mahindra-tractors-independence-day.jpg?width=250",
+      "AltText": "Mahindra Futurescape To Unveil Seven New Models of Tractors, 'Thar. e' as Part of #GoGlobal Vision on 77th Independence Day ",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/77th-independence-day-2023-mahindra-futurescape-to-unveil-seven-new-models-of-tractors-thar-e-as-part-of-goglobal-vision/",
+      "ArticleTitle": "Mahindra Futurescape To Unveil Seven New Models of Tractors, 'Thar. e' as Part of #GoGlobal Vision on 77th Independence Day ",
+      "id": "41ef"
+    },
+    {
+      "Position": "16",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92721/woman-white-laboratory-robe-examines-salad-cabbage-greenhouse-using-tablet.png?width=250",
+      "AltText": "Top 10 Digital Initiatives Helpful For Farmers ",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/top-10-digital-initiatives-helpful-for-farmers/",
+      "ArticleTitle": "Top 10 Digital Initiatives Helpful For Farmers ",
+      "id": "94e6"
+    },
+    {
+      "Position": "17",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92718/new-tractor.jpg?width=250",
+      "AltText": "This Festive Season, Buy Your Dream Tractor with a Tractor Loan",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/this-festive-season-buy-your-dream-tractor-with-a-tractor-loan/",
+      "ArticleTitle": "This Festive Season, Buy Your Dream Tractor with a Tractor Loan",
+      "id": "0555"
+    },
+    {
+      "Position": "18",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92680/fm3-final.jpg?width=250",
+      "AltText": "CeRA Libraries Providing Research Data to ICAR, Agriculture Universities, State Government",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/cera-libraries-providing-research-data-to-icar-agriculture-universities-state-government/",
+      "ArticleTitle": "CeRA Libraries Providing Research Data to ICAR, Agriculture Universities, State Government",
+      "id": "c588"
+    },
+    {
+      "Position": "19",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92378/lumberjack-g6a60e40c4_1280.png?width=250",
+      "AltText": "Indian Parliamentary Panel Urges Centre To Maximize Allocation In R&D For Farm Mechanization ",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/indian-parliamentary-panel-urges-centre-to-maximize-allocation-in-rd-for-farm-mechanization/",
+      "ArticleTitle": "Indian Parliamentary Panel Urges Centre To Maximize Allocation In R&D For Farm Mechanization ",
+      "id": "f0b0"
+    },
+    {
+      "Position": "20",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92224/vst.jpeg?width=250",
+      "AltText": "VST Tillers Tractors Ltd Unveils VST 929 DI EGT Tractor in Tamil Nadu Showcases a Range of Products at the AGRI INTEX 2023",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/vst-tillers-tractors-ltd-unveils-vst-929-di-egt-tractor-in-tamil-nadu-showcases-a-range-of-products-at-the-agri-intex-2023/",
+      "ArticleTitle": "VST Tillers Tractors Ltd Unveils VST 929 DI EGT Tractor in Tamil Nadu Showcases a Range of Products at the AGRI INTEX 2023",
+      "id": "36a1"
+    },
+    {
+      "Position": "21",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92197/sithl.jpg?width=250",
+      "AltText": "Stihl India Unveils 'Parivartan Yatra': Embark on a Journey of Technological Transformation in Farming!",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/stihl-india-unveils-parivartan-yatra-embark-on-a-journey-of-technological-transformation-in-farming/",
+      "ArticleTitle": "Stihl India Unveils 'Parivartan Yatra': Embark on a Journey of Technological Transformation in Farming!",
+      "id": "20bc"
+    },
+    {
+      "Position": "22",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92186/stihl-1280x720.jpg?width=250",
+      "AltText": "Stihl India Announces 'Parivartan Yatra' in Andhra Pradesh to Promote Farm Mechanization",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/stihl-india-announces-parivartan-yatra-in-andhra-pradesh-to-promote-farm-mechanization/",
+      "ArticleTitle": "Stihl India Announces 'Parivartan Yatra' in Andhra Pradesh to Promote Farm Mechanization",
+      "id": "940c"
+    },
+    {
+      "Position": "23",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/92050/vst-new-banner-1280-x-720-plx.jpg?width=250",
+      "AltText": "Problems in Farming in India: VST Shakti 932 DI i Trac Breaks the Ice ",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/problems-in-farming-in-india-vst-shakti-932-idi-breaks-the-ice/",
+      "ArticleTitle": "Problems in Farming in India: VST Shakti 932 DI i Trac Breaks the Ice ",
+      "id": "8b3f"
+    },
+    {
+      "Position": "24",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/91985/nathan-lugo-ss2cg2hz3s8-unsplash.png?width=250",
+      "AltText": "Difference Between Power Tillers And Tractors, Which Is Better For Farmers And Why? ",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/difference-between-power-tillers-and-tractors-which-is-better-for-farmers-and-why/",
+      "ArticleTitle": "Difference Between Power Tillers And Tractors, Which Is Better For Farmers And Why? ",
+      "id": "1d1f"
+    },
+    {
+      "Position": "25",
+      "ImageURL": "https://kj1bcdn.b-cdn.net/media/91790/role-of-tractors-1.jpg?width=250",
+      "AltText": "Role of Tractors in Agriculture",
+      "ArticleLink": "https://krishijagran.com/farm-mechanization/role-of-tractors-in-agriculture-1/",
+      "ArticleTitle": "Role of Tractors in Agriculture",
+      "id": "cbcb"
+    }
+  ]
 }

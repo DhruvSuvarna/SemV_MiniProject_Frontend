@@ -1,16 +1,49 @@
-import React from 'react';
-import { Box, Typography, Button, Card, CardMedia, CardContent, Grid} from '@mui/material';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import { Box, Typography, Button, Avatar, CardMedia, Grid} from '@mui/material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Stack from '@mui/material/Stack';
 import ProductCard from '../components/ProductCard';
+import MenuIcon from '@mui/icons-material/Menu';
 
-export default function ShopDisplay(props) {
+export default function ShopDisplay(props) { 
   const navigate = useNavigate();
   const location = useLocation();
+  const [products, setProducts] = useState([]);
+  const [filterState, setFilterState] = useState(false)
+
+  useEffect(()=>{
+    if (props.category === 'all'){
+    axios.get('http://localhost:8000/products')
+    .then(response=>setProducts(response.data))
+    .catch(err=>console.log(err));
+    } else {
+        axios.get(`http://localhost:8000/products?category=${props.category}`)
+        .then(response=>setProducts(response.data))
+        .catch(err=>console.log(err));
+    }
+  }, [location.pathname])
+  
   return (
-    <Box sx={{display: 'flex', justifyContent: 'center', mx: '5vw', my:'5vh', py: '5vh'}}>
+    <Box sx={{mx: '5vw', my:'5vh', py: '5vh'}}>
+        {!filterState? 
+            <div style={{display:'flex'}}>
+                <Box onClick={()=>{setFilterState(!filterState)}} 
+                    sx={{borderRadius: '1vh'}}
+                >
+                    <MenuIcon sx={{fontSize: '40px'}}/>
+                </Box>
+                <Typography variant="h6" sx={{ml: 2, color:'#004e70', pt:0.5}}>Filter</Typography>
+            </div>:
+            <div style={{display:'flex'}}>
+                <Box onClick={()=>{setFilterState(!filterState)}}>
+                    <MenuIcon sx={{fontSize: '40px'}}/>
+                </Box>
+                <Typography variant="h6" sx={{ml: 2, color:'#004e70', pt:0.5}}>Remove Filter</Typography>
+            </div>
+        }
         <Grid container spacing={1}>
-            <Grid item sm={12} md={3}>
+            {filterState && <Grid item sm={12} md={3}>
                 <Stack sx={{borderRadius: '1vh', borderTopLeftRadius: '5vh', borderTopRightRadius: 0,
                  border: '1px solid #45b45f', borderBottom: 'none'}}>
                     {categories.map((category, index)=>{
@@ -22,37 +55,29 @@ export default function ShopDisplay(props) {
                         color: '#165327'
                         }}
                         key={index}
-                        onClick={()=>{navigate(category.path)}}
+                        onClick={()=>{navigate(category.path);}}
                         >
                             {category.name}
                         </Button>
                         )
                     })}
                 </Stack>
-            </Grid>
-            <Grid item sm={12} md={9} sx={{display: 'flex', flexDirection: 'column', gap:'2vh'}}>
+            </Grid>}
+            <Grid item sm={12} md={filterState?9:12} sx={{display: 'flex', flexDirection: 'column', gap:'2vh'}}>
                 <CardMedia
                     component="img"
                     image={props.category!=='all'?`/img/products/categories/${props.category}.png`:'/img/product.jpeg'}
-                    sx={{borderRadius: '1vh', borderTopRightRadius: '5vh', borderTopLeftRadius: 0, width: '100%'}}
+                    sx={{borderRadius: '1vh', borderTopRightRadius: '5vh', borderTopLeftRadius: filterState?0:'5vh', 
+                    width: '100%'}}
                 />
                 <Grid container spacing={3} sx={{width: '100%', ml:'-10px !important'}}>
                     {products.map((product, index)=>{
-                        if(props.category === 'all'){
-                            return(
-                                <Grid item sm={12} md={6} lg={4} key={index} sx={{pb:'0.5vh', pr: '0.5vh'}}>
-                                <ProductCard product={product}/>
-                                </Grid>
-                            )
-                        } else {
-                            if(product.category === props.category){
-                                return(
-                                    <Grid item sm={12} md={6} lg={4} key={index} sx={{pb:'0.5vh', pr: '0.5vh'}}>
-                                    <ProductCard product={product}/>
-                                    </Grid>
-                                )
-                            }
-                        }
+                        return(
+                            <Grid item xs={12} sm={filterState?12:6} md={filterState?6:4} 
+                            lg={filterState?4:3} key={index} sx={{pb:'0.5vh', pr: '0.5vh'}}>
+                            <ProductCard product={product}/>
+                            </Grid>
+                        )
                     })}
                 </Grid>
             </Grid>
@@ -96,322 +121,4 @@ const categories = [
         name: 'Premium Fruits',
         path: '/product/premiumfruits'
     }
-]
-
-const products = [
-  {
-    "id": 6,
-    "name": "Product 1",
-    "image": "/img/product.jpeg",
-    "category": "vegetables",
-    "price": 100,
-    "rating": 3,
-    "description": "This is product 1"
-  },
-  {
-      "id": 7,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
-      "category": "fruits",
-      "price": 200,
-      "rating": 5,
-      "description": "This is product 2"
-  },
-  {
-      "id": 8,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
-      "category": "dairy",
-      "price": 300,
-      "rating": 4,
-      "description": "This is product 3"
-  },
-  {
-      "id": 9,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
-      "price": 400,
-      "rating": 3,
-      "description": "This is product 4"
-  },
-  {
-      "id": 10,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
-      "price": 500,
-      "rating": 5,
-      "description": "This is product 5"
-  },
-  {
-    "id": 11,
-    "name": "Product 1",
-    "image": "/img/product.jpeg",
-    "category": "vegetables",
-    "price": 100,
-    "rating": 3,
-    "description": "This is product 1"
-  },
-  {
-      "id": 12,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
-      "category": "fruits",
-      "price": 200,
-      "rating": 5,
-      "description": "This is product 2"
-  },
-  {
-      "id": 13,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
-      "category": "dairy",
-      "price": 300,
-      "rating": 4,
-      "description": "This is product 3"
-  },
-  {
-      "id": 14,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
-      "price": 400,
-      "rating": 3,
-      "description": "This is product 4"
-  },
-  {
-      "id": 15,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
-      "price": 500,
-      "rating": 5,
-      "description": "This is product 5"
-  },
-  {
-    "id": 16,
-    "name": "Product 1",
-    "image": "/img/product.jpeg",
-    "category": "vegetables",
-    "price": 100,
-    "rating": 3,
-    "description": "This is product 1"
-  },
-  {
-      "id": 17,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
-      "category": "fruits",
-      "price": 200,
-      "rating": 5,
-      "description": "This is product 2"
-  },
-  {
-      "id": 18,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
-      "category": "dairy",
-      "price": 300,
-      "rating": 4,
-      "description": "This is product 3"
-  },
-  {
-      "id": 19,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
-      "price": 400,
-      "rating": 3,
-      "description": "This is product 4"
-  },
-  {
-      "id": 20,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
-      "price": 500,
-      "rating": 5,
-      "description": "This is product 5"
-  },
-  {
-    "id": 21,
-    "name": "Product 1",
-    "image": "/img/product.jpeg",
-    "category": "vegetables",
-    "price": 100,
-    "rating": 3,
-    "description": "This is product 1"
-  },
-  {
-      "id": 22,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
-      "category": "fruits",
-      "price": 200,
-      "rating": 5,
-      "description": "This is product 2"
-  },
-  {
-      "id": 23,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
-      "category": "dairy",
-      "price": 300,
-      "rating": 4,
-      "description": "This is product 3"
-  },
-  {
-      "id": 24,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
-      "price": 400,
-      "rating": 3,
-      "description": "This is product 4"
-  },
-  {
-      "id": 25,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
-      "price": 500,
-      "rating": 5,
-      "description": "This is product 5"
-  },
-  {
-    "id": 26,
-    "name": "Product 1",
-    "image": "/img/product.jpeg",
-    "category": "vegetables",
-    "price": 100,
-    "rating": 3,
-    "description": "This is product 1"
-  },
-  {
-      "id": 27,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
-      "category": "fruits",
-      "price": 200,
-      "rating": 5,
-      "description": "This is product 2"
-  },
-  {
-      "id": 28,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
-      "category": "dairy",
-      "price": 300,
-      "rating": 4,
-      "description": "This is product 3"
-  },
-  {
-      "id": 29,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
-      "price": 400,
-      "rating": 3,
-      "description": "This is product 4"
-  },
-  {
-      "id": 30,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
-      "price": 500,
-      "rating": 5,
-      "description": "This is product 5"
-  },
-  {
-    "id": 31,
-    "name": "Product 1",
-    "image": "/img/product.jpeg",
-    "category": "vegetables",
-    "price": 100,
-    "rating": 3,
-    "description": "This is product 1"
-  },
-  {
-      "id": 32,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
-      "category": "fruits",
-      "price": 200,
-      "rating": 5,
-      "description": "This is product 2"
-  },
-  {
-      "id": 33,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
-      "category": "dairy",
-      "price": 300,
-      "rating": 4,
-      "description": "This is product 3"
-  },
-  {
-      "id": 34,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
-      "price": 400,
-      "rating": 3,
-      "description": "This is product 4"
-  },
-  {
-      "id": 35,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
-      "price": 500,
-      "rating": 5,
-      "description": "This is product 5"
-  },
-  {
-    "id": 36,
-    "name": "Product 1",
-    "image": "/img/product.jpeg",
-    "category": "vegetables",
-    "price": 100,
-    "rating": 3,
-    "description": "This is product 1"
-  },
-  {
-      "id": 37,
-      "name": "Product 2",
-      "image": "/img/products/mango.jpg",
-      "category": "fruits",
-      "price": 200,
-      "rating": 5,
-      "description": "This is product 2"
-  },
-  {
-      "id": 38,
-      "name": "Product 3",
-      "image": "/img/products/papaya.jpg",
-      "category": "dairy",
-      "price": 300,
-      "rating": 4,
-      "description": "This is product 3"
-  },
-  {
-      "id": 39,
-      "name": "Product 4",
-      "image": "/img/products/orange.jpg",
-      "category": "salads",
-      "price": 400,
-      "rating": 3,
-      "description": "This is product 4"
-  },
-  {
-      "id": 40,
-      "name": "Product 5",
-      "image": "/img/products/strawberry.jpg",
-      "category": "momskitchen",
-      "price": 500,
-      "rating": 5,
-      "description": "This is product 5"
-  }
 ]
